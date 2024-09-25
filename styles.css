@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Contenedor para las columnas */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Columnas flotantes */
+.column {
+    float: left;
+    width: 33.33%; /* Ancho para 3 columnas */
+    padding: 15px;
+}
+
+/* Aplicar un estilo básico a las columnas */
+.column img {
+    width: 100%; /* Asegura que todas las imágenes ocupen el ancho completo de la columna */
+    height: 900px; /* Fija la altura de las imágenes */
+    object-fit: cover; /* Recorta la imagen para mantener las proporciones */
+}
+
+
+.column h2 {
+    color: #333;
+    text-align: center;
+}
+
+.column p {
+    text-align: justify;
+}
+
+/* Clear en un elemento que no queremos que flote */
+.clear {
+    clear: both;
+}
